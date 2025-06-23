@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classical Design Studio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add inside .container, after your main-content and before other elements -->
+<div class="bg-blobs">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+</div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <!-- Add near the bottom of .container -->
+<div class="animated-dots">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<!-- Add near the bottom of .container -->
+<div class="pulse-line"></div>
+
+
+            <div class="hamburger" tabindex="0" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="subtitle">Our Version</div>
+            <h1 class="main-title">DESIGN</h1>
+            <p class="description">
+                Our hobby is a modern and convenient design, the 
+                key to successful communication with the client.
+            </p>
+            <a href="#" class="cta-button">See More</a>
+        </div>
+
+        <!-- Mobile-only animated accent -->
+        <div class="mobile-accent"></div>
+
+        <!-- Page Navigation -->
+        <div class="page-nav">
+            <span class="page-number">01</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <span class="page-total">03</span>
+        </div>
+
+        <!-- Minimal mobile animation at the bottom -->
+        <div class="mobile-pulse"></div>
+    </div>
+    <script>
+      // Hamburger menu toggle for mobile
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active');
+      });
+      hamburger.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') hamburger.click();
+      });
+    </script>
+</body>
+</html>
